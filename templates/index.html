@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bookup Destination</title>
+	<link rel="icon" href="static/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        *{
+    margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+header{
+    background-image: url("https://free4kwallpapers.com/uploads/originals/2020/01/10/fairy-tale-book-princess-wallpaper.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+body{
+    background-image: url("https://wallpapercave.com/wp/wp2914402.png");
+}
+
+nav{
+    
+	position: fixed;
+	width: 100%;
+	line-height: 60px;
+}
+
+nav ul{
+	float: left;
+	margin: 0;
+	padding-right: 42px;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 16px 32px;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition:0.6s ease;
+
+}
+
+nav ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.logo{
+	height: 78px;
+	float: right;
+	margin: 16px 48px;
+}
+
+h1{
+	font-size: 54px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 350px;
+	color: #fff;
+}
+
+h2{
+	font-size: 48px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-align: center;
+	margin: 50px;
+}
+
+
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 20px;
+  margin: auto auto;
+  
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+.container {
+  position: relative;
+  max-width: 1000px; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.content {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0);
+  color: #f1f1f1;
+  width: 90%; 
+  padding: 20px; }
+
+.container img:hover {
+	 transform: translateY(-20px);
+	 transition: 1s;
+  cursor: pointer;
+}
+
+
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+
+.text-block {
+  position: absolute;
+  top: 20px;
+  
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.containerq{
+    position: relative;
+    left:250px;
+}
+
+    </style>
+</head>
+<body>
+	<header>
+		<nav>
+
+			<image class="logo" src="{{ url_for('static',filename='logo3.png')}}">
+
+			<div class="menu">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/about/">About</a></li>
+					<li><a href="/genres/">Genres</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+					<li><a href="/feedback/">Feedback</a></li>
+					
+					
+
+				</ul>
+			</div>
+		</nav>
+		      <h1> BookUp Destination</h1>
+        </header>
+        <h2>GENRES.</h2>
+      <div class="containerq">
+        <div class="row">
+        <div class="column">
+          <div class="container">
+        <img src="{{ url_for('static',filename='m1.jpg')}}" alt="SCI-FICTION" style="width:100%;">
+        <div class="content">
+          <h3>SCI-FICTION</h3>
+        </div>
+      </div>
+      </div>
+        <div class="column">
+          <div class="container">
+        <img src="{{ url_for('static',filename='m2.jpg')}}" alt="MYSTERY" style="width:100%;">
+        <div class="content">
+          <h3>MYSTERY</h3>
+      </div>
+      </div>
+      </div>
+        <div class="column">
+          <div class="container">
+        <img src="{{ url_for('static',filename='m3.jpg')}}" alt="ROMANCE" style="width:100%;">
+        <div class="content">
+          <h3>ROMANCE</h3>
+        </div>
+      </div>
+        </div>
+      </div>
+      
+      
+      <div class="row">
+        <div class="column">
+          <div class="container">
+        <img src="{{ url_for('static',filename='m4.jpg')}}"alt="THRILLER" style="width:100%;">
+        <div class="content">
+          <h3>THRILLER</h3>
+        </div>
+      </div>
+      </div>
+        <div class="column">
+          <div class="container">
+        <img src="{{ url_for('static',filename='m5.jpg')}}" alt="ADVENTURE" style="width:100%;">
+        <div class="content">
+          <h3>ADVENTURE</h3>
+      </div>
+      </div>
+      </div>
+        <div class="column">
+          <div class="container">
+        <img src="{{ url_for('static',filename='m6.jpg')}}" alt="HORROR" style="width:100%;">
+        <div class="content">
+          <h3>HORROR</h3>
+        </div>
+      </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="column">
+          <div class="container">
+        <img src="{{ url_for('static',filename='m7.jpg')}}" alt="HUMOUR" style="width:100%;">
+        <div class="content">
+          <h3>HUMOUR</h3>
+        </div>
+      </div>
+      </div>
+        <div class="column">
+          <div class="container">
+        <img src="{{ url_for('static',filename='m8.jpg')}}" alt="SELP-HELP" style="width:100%;">
+        <div class="content">
+          <h3>SELP-HELP</h3>
+      </div>
+      </div>
+      </div>
+        <div class="column">
+          <div class="container">
+        <img src="{{ url_for('static',filename='m9.jpg')}}" alt="AUTO BIOGRAPHY" style="width:100%;">
+        <div class="content">
+          <h3>AUTO BIOGRAPHY</h3>
+        </div>
+      </div>
+        </div>
+</div>
+</div>
+
+</body>
+</html>

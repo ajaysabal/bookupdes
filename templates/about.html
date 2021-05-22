@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bookup Destination</title>
+	<link rel="icon" href="{{ url_for('static',filename='favicon.ico')}}" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        *{
+    margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+header{
+    background-image: url(https://i.pinimg.com/originals/b0/62/b7/b062b761ecf1e1cd1bf56b7c02acf217.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+body{
+    background-image: url("https://wallpapercave.com/wp/wp2914402.png");
+}
+
+nav{
+    
+	position: fixed;
+	width: 100%;
+	line-height: 60px;
+}
+
+nav ul{
+	float: left;
+	margin: 0;
+	padding-right: 42px;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 16px 32px;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition:0.6s ease;
+
+}
+
+nav ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.logo{
+	height: 78px;
+	float: right;
+	margin: 16px 48px;
+}
+
+h1{
+	font-size: 54px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 350px;
+	color: #fff;
+}
+
+p{
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
+	color: #fff;
+}
+
+
+
+h2{
+	font-size: 48px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-align: center;
+	margin: 50px;
+}
+
+
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 20px;
+  margin: auto auto;
+  
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+.container {
+  position: relative;
+  max-width: 1000px; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.content {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0);
+  color: #f1f1f1;
+  width: 90%; 
+  padding: 20px; }
+
+.container img:hover {
+	 transform: translateY(-20px);
+	 transition: 1s;
+  cursor: pointer;
+}
+
+
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+
+.text-block {
+  position: absolute;
+  top: 20px;
+  
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.containerq{
+    position: relative;
+    left:250px;
+}
+
+    </style>
+</head>
+<body>
+	<header>
+		<nav>
+
+
+			<div class="menu">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/about/">About</a></li>
+					<li><a href="/genres/">Genres</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+					<li><a href="/feedback/">Feedback</a></li>
+					
+					
+
+				</ul>
+			</div>
+		</nav>
+		      <h1>BookUp Destination</h1>
+			  <p>"If you don’t like to read,<br> 
+				you haven’t found the right book.<br>
+				        			--	J.K. Rowling</p>
+	</header>
+	
+  
+</div>
+  
+
+
+</body>
+</html>
